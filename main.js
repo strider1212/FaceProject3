@@ -9,10 +9,10 @@ var FaceModel = Backbone.Model.extend({
 
 var FaceView = Backbone.View.extend({
 
-  el: $('#container'),
+  el: $("#container"),
   
   render: function () {
-    this.$el.append("<h1>Test</h1>");
+    this.$el.prepend("<h1>Test</h1>");
   },
   
   events: {
