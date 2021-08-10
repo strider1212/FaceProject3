@@ -8,13 +8,19 @@ var FaceModel = Backbone.Model.extend({
 });
 
 var FaceView = Backbone.View.extend({
+
+  el: $('#container'),
+  
+  render: function () {
+    this.$el.append("<h1>Test</h1>");
+  },
   
   events: {
     'click #input-button': 'pullCollection',
   },
 
   pullCollection: function () {
-    alert("clicked");
+    this.render();
   },
 });
 
